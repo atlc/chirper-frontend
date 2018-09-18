@@ -11,14 +11,16 @@ class App extends Component {
 
     render() {
         return (
-            <div className='container'>
-                <Navbar />
-                <LeftPanel />
-                <h1>Testing for Chirper!</h1>
-                
-                <User name="Andrew" />
-                <Footer />
-            </div>
+            <React.Fragment>
+                <div className='container'>
+                    <Navbar />
+                </div>
+                <div className='container'>
+                    <LeftPanel />
+                    <User name='Andrew' />
+                    <Footer />
+                </div>
+            </React.Fragment>
         );
     }
 
