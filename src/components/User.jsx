@@ -6,7 +6,9 @@ class User extends Component {
 
     render() {
         return (
-            <h1>Hello world, I am {this.props.name}! </h1>
+            <div className='col-6'>
+                <h1>Hello world, I am {this.props.name}! </h1>
+            </div>
         );
     }
 }
