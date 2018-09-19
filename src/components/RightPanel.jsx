@@ -9,16 +9,16 @@ class RightPanel extends Component {
             <div className='col-3'>
                 <ul className='nav flex-column'>
                     <li className='nav-item'>
-                        <a className='nav-link' href='#'>Trending Tweets</a>
+                        <a className='nav-link' href='#'>Accounts to Follow</a>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link' href='#'>Trending Topics</a>
+                        <a className='nav-link' href='#'>Suggested Trends</a>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link' href='#'>Trending People</a>
+                        <a className='nav-link' href='#'>Cats</a>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link' href='#'>Stories of the day</a>
+                        <a className='nav-link' href='#'>Doggos</a>
                     </li>
                     <li></li>
                 </ul>

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import User from './User';
 import LeftPanel from './LeftPanel';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import RightPanel from './RightPanel';
+import Timeline from './Timeline';
 
 class App extends Component {
     // constructor(props) {
@@ -18,7 +18,7 @@ class App extends Component {
                 </div>
                 <div className='row mt-5 pt-5'>
                     <LeftPanel />
-                    <User name='Andrew' />
+                    <Timeline />
                     <RightPanel />
                 </div>
                 <div className='row'>
