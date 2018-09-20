@@ -9,10 +9,11 @@ class Footer extends Component {
                 <nav className='navbar navbar-bottom navbar-dark bg-dark'>
                     <ul className='nav nav-pills nav-fill'>
                         <li className='nav-item'>
-                            <a className='nav-link active' href='#'>Contact</a>
+                            <button className='btn btn-success pr-1 mr-1' href='#'>Contact</button>
                         </li>
+                        <li></li>
                         <li className='nav-item'>
-                            <a className='nav-link' href='#'>Copyright 2018</a>
+                            <button className='btn btn-outline-success' href='#'>Copyright 2018</button>
                         </li>
                     </ul>
                 </nav>

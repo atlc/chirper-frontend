@@ -9,16 +9,16 @@ class Navbar extends Component {
             <nav className='navbar fixed-top navbar-dark bg-dark'>
                 <ul className='nav nav-pills nav-fill col-5'>
                     <li className='nav-item'>
-                        <a className='nav-link active' href='#'>Home</a>
+                        <button className='btn btn-success' href='#'>Home</button>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link' href='#'>Moments</a>
+                        <button className='btn btn-outline-success' href='#'>Moments</button>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link' href='#'>Notifications</a>
+                        <button className='btn btn-outline-success' href='#'>Notifications</button>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-link' href='#'>Messages</a>
+                        <button className='btn btn-outline-success' href='#'>Messages</button>
                     </li>
                 </ul>
                 <div className='col-1'>
