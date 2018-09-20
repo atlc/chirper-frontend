@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import Chirp from './Chirp';
+import Chirpbox from './Chirpbox';
 
 class Timeline extends Component {
 
     render() {
         return (
-            <div className='col-4'>
-
+            <div className='col-6'>
+                <Chirpbox />
+                
                 <Chirp text="<Reverend> IRC is just multiplayer notepad." />
                 <Chirp text="<Sonium> someone speak python here?
                             <lucky> HHHHHSSSSSHSSS

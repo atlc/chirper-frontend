@@ -22,7 +22,7 @@ class Navbar extends Component {
                     </li>
                 </ul>
                 <div className='col-1'>
-                    <img src='./images/birdo.ico' alt='bird icon' />
+                    <img src={require('../images/birdo.ico')} alt='' style={{width: '48px', height: '48px'}} />
                 </div>
                 <form class="form-inline col-4">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />

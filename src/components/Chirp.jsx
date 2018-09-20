@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
+import User from './User';
 
 class Chirp extends Component {
-    constructor(props) {
-        super(props);
-    }
 
 
     render() {
         return (
-            <p>{this.props.text}</p>
+            <div class="card pb-3 mb-3">
+                <div class="card-header">
+                    <User name='Andrew Cartwright' username='atlc' />
+                </div>
+                <div class="card-body">
+                    <p class="card-text">{this.props.text}</p>
+                    <a href="#" class="btn btn-success">Rechirp</a> <a href="#" class="btn btn-success">Favorite</a>
+                </div>
+            </div>
         );
     }
 }
