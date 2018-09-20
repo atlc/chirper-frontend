@@ -16,7 +16,7 @@ class App extends Component {
                 <div className='row'>
                     <Navbar />
                 </div>
-                <div className='row mt-5 pt-5'>
+                <div className='row mt-5 pt-5 justify-content-between'>
                     <LeftPanel />
                     <Timeline />
                     <RightPanel />
