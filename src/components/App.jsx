@@ -6,9 +6,7 @@ import RightPanel from './RightPanel';
 import Timeline from './Timeline';
 
 class App extends Component {
-    // constructor(props) {
-    //     super(props);
-    // }
+
 
     render() {
         return (
@@ -27,7 +25,6 @@ class App extends Component {
             </div>
         );
     }
-
 }
 
 export default App;

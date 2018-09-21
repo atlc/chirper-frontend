@@ -1,14 +1,39 @@
 import React, { Component } from 'react';
 import Chirp from './Chirp';
-import Chirpbox from './Chirpbox';
 
 class Timeline extends Component {
+    constructor(props) {
+        super(props);
+
+        this.handleClick = this.handleClick.bind(this); 
+        this.handleChange = this.handleChange.bind(this);
+
+        this.state = {
+            placeholder: 'Chirp something to the world!',
+            chirp: ''
+        }
+    }
+
+
+    handleChange(event) {
+        this.setState({ chirp: event.target.value });
+    }
+
+    handleClick() {
+        alert(this);
+        this.setState({ chirp: '', placeholder: ''});        
+    }
+
 
     render() {
         return (
             <div className='col-6'>
-                <Chirpbox />
+                <div className="input-group mb-4 pb-4">
+                    <textarea onChange={(event) => this.handleChange(event)} type="text" className="form-control" placeholder={this.state.placeholder} id='Chirpbox' />
+                    <button onClick={this.handleClick} className="btn btn-outline-info" type="button">Chirp!</button>
+                </div>
                 
+
                 <Chirp text="<Reverend> IRC is just multiplayer notepad." />
                 <Chirp text="<Sonium> someone speak python here?
                             <lucky> HHHHHSSSSSHSSS

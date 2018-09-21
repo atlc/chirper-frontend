@@ -20,7 +20,6 @@ class RightPanel extends Component {
                     <li className='nav-item'>
                         <a className='nav-link' href='#'>Doggos</a>
                     </li>
-                    <li></li>
                 </ul>
             </div>
         );
