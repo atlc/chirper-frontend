@@ -1,5 +1,6 @@
 
 # Chirper (Front End)
+## [Live Demo](https://atlc.github.io/chirper-frontend)
 
 In this lab, you will be building your first front-end application using ReactJS.
 
