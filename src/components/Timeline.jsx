@@ -30,20 +30,22 @@ class Timeline extends Component {
             chirpsList: [
                 this.state.chirpboxText,
                 ...this.state.chirpsList
-            ]
+            ],
+            chirpboxText: ''
         });
+
     }
 
 
     render() {
-        let updatedChirps = this.state.chirpsList.map(chirp => {
-            return <Chirp text={chirp} />
+        let updatedChirps = this.state.chirpsList.map((chirp, index) => { 
+            return <Chirp key={index} text={chirp} />
         });
 
         return (
             <div className='col-6'>
                 <div className="input-group mb-4 pb-4">
-                    <textarea onChange={(event) => this.handleChange(event)} type="text" className="form-control" placeholder={this.state.placeholder} id='Chirpbox' />
+                    <textarea onChange={(event) => this.handleChange(event)} type="text" className="form-control" placeholder={this.state.placeholder} value={this.state.chirpboxText} id='Chirpbox' />
                     <button onClick={this.handleClick} className="btn btn-outline-info" type="button">Chirp!</button>
                 </div>
                 {updatedChirps}
